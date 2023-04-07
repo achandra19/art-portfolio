@@ -1,7 +1,8 @@
 body {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #63a7ff; }
 
 header {
   display: flex;
@@ -29,10 +30,28 @@ nav a:hover {
   position: relative; }
 
 .images img {
-  width: 100%; }
+  width: 400px;
+  height: 400px; }
+
+.logo {
+  width: 15px;
+  height: 20px; }
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  grid-auto-rows: minmax(100px, auto); }
 
 .images img.active {
   display: block; }
+
+.homepage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 1100px; }
 
 .arrow-left,
 .arrow-right {

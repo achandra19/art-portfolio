@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js", 
+    "start": "node app.js",
     "sass": "node-sass src/scss -o dist/css",
-    "sass-watch": "node-sass -w src/scss -o dist/css"
+    "sass-watch": "node app.js && node-sass -w src/scss -o dist/css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "swiper": "^9.2.0"
   }
 }
